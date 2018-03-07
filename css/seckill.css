@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*顶部区域*/
+#top{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 0;
+}
+#top svg{
+	font-size: 8vw;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	float: left;
+	fill-opacity: 0.4;
+	margin-left: -10%;
+}
+#top p{
+	width: 80%;
+	float: left;
+	font-size: 4vw;
+	text-align: center;
+	color: #BFBFBF;
+}
+/*顶部区域结束*/
+
+/*开抢区*/
+#time{
+	width: 100%;
+	overflow: hidden;
+}
+#time .time1{
+	width: 33.333%;
+	background: #ca0915;
+	float: left;
+	padding: 2% 0;
+	box-sizing: border-box;
+	border-right: 1px solid #626262;
+	position: relative;
+}
+#time .time1 p{
+	text-align: center;
+	font-size: 3.5vw;
+	color: white;
+	line-height: 1.5em;
+}
+/*#time .time1 .on{
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 3vw solid #ca0915;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+}*/
+#time .time2{
+	width: 33.333%;
+	background: #2E2E2E;
+	float: left;
+	padding: 2% 0;
+	box-sizing: border-box;
+	border-right: 1px solid #626262;
+	position: relative;
+}
+#time .time2 p{
+	text-align: center;
+	font-size: 3.5vw;
+	color: white;
+	line-height: 1.5em;
+}
+#time .time3{
+	width: 33.333%;
+	background: #2E2E2E;
+	float: left;
+	padding: 2% 0;
+	box-sizing: border-box;
+	border-right: 1px solid #626262;
+	position: relative;
+}
+#time .time3 p{
+	text-align: center;
+	font-size: 3.5vw;
+	color: white;
+	line-height: 1.5em;
+}
+/*开抢区结束*/
+#zt1{
+	width: 100%;
+	/*margin-top: 5%;*/
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	/*display: none;*/
+}
+#zt2{
+	width: 100%;
+	/*margin-top: 5%;*/
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	display: none;
+}
+#zt3{
+	width: 100%;
+	/*margin-top: 5%;*/
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	display: none;
+}
+/*倒计时区*/
+.time-item1{
+	width: 100%;
+	 margin-top: 10%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.time-item1 .xian1{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-right: 5%;
+    font-style: normal;
+    float: left;
+}
+.time-item1 .xian2{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-left: 3%;
+    font-style: normal;
+    float: right;
+}
+.time-item1 strong {
+	display: block;
+	width: 10%;
+	float: left;
+        background: #C71C60;
+        color: #fff;
+        line-height: 1.5em;
+        font-size:4vw;
+        font-family: Arial;
+        margin-right: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+.time-item2{
+	width: 100%;
+	 margin-top: 3%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.time-item2 .xian1{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-right: 5%;
+    font-style: normal;
+    float: left;
+}
+.time-item2 .xian2{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-left: 3%;
+    font-style: normal;
+    float: right;
+}
+.time-item2 strong {
+	display: block;
+	width: 10%;
+	float: left;
+        background: #C71C60;
+        color: #fff;
+        line-height: 1.5em;
+        font-size:4vw;
+        font-family: Arial;
+        margin-right: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+.time-item3{
+	width: 100%;
+	 margin-top: 3%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.time-item3 .xian1{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-right: 5%;
+    font-style: normal;
+    float: left;
+}
+.time-item3 .xian2{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-left: 3%;
+    font-style: normal;
+    float: right;
+}
+.time-item3 strong {
+	display: block;
+	width: 10%;
+	float: left;
+        background: #C71C60;
+        color: #fff;
+        line-height: 1.5em;
+        font-size:4vw;
+        font-family: Arial;
+        margin-right: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+.time-item4{
+	width: 100%;
+	 margin-top: 3%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.time-item4 .xian1{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-right: 5%;
+    font-style: normal;
+    float: left;
+}
+.time-item4 .xian2{
+    display: inline-block;
+    height: 1vw;
+    border-top: 1px solid #fff;
+    width: 20%;
+    border-color: gray;
+    margin-left: 3%;
+    font-style: normal;
+    float: right;
+}
+.time-item4 strong {
+	display: block;
+	width: 10%;
+	float: left;
+        background: #C71C60;
+        color: #fff;
+        line-height: 1.5em;
+        font-size:4vw;
+        font-family: Arial;
+        margin-right: 2%;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    
+/*倒计时区结束*/
+
+/*产品区*/
+#chanpin{
+	widows: 100%;
+	padding: 0 2%;
+}
+#chanpin .cp_1{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+}
+#chanpin .cp_1 .cp_left{
+	width: 45%;
+	float: left;
+}
+#chanpin .cp_1 .cp_left img{
+	width: 100%;
+}
+
+#chanpin .cp_1 p{
+	font-size: 5vw;
+	color: #4A4A4A;
+}
+#chanpin .cp_1 span{
+	display: block;
+	margin-top: 20%;
+	color: #C80A15;
+	font-size: 4.5vw;
+	float: left;
+}
+#chanpin .cp_1 span i{
+	font-style: normal;
+	font-size: 3.5vw;
+}
+#chanpin .cp_1 a{
+	display: block;
+	float: right;
+	text-decoration: none;
+	margin-top: 19%;
+	margin-right: 3%;
+	background: #FD0605;
+	color: #000000;
+	font-size: 4vw;
+	line-height: 2em;
+	padding: 0 6%;
+	border-radius: 5px;
+}
+/*产品区结束*/

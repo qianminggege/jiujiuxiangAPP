@@ -1,0 +1,310 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-webkit-tap-highlight: transparent;
+	/*清除点击默认的高亮效果*/
+}
+
+a,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+dd,
+details,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+s,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	/*表格的边线重叠*/
+	border-spacing: 0;
+}
+
+input,
+textarea {
+	border: 0 none;
+	resize: none;
+	/*调整尺寸*/
+	/*outline:none;*/
+	/*清除表单默认的蓝色边框效果*/
+	-webkit-appearance: none;
+	/* 针对表单的默认的样式进行清除  比如立体效果*/
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	display: block;
+	-webkit-touch-callout: none;
+	/*当你触摸并按住触摸目标时候，禁止或显示系统默认菜单 */
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #343434;
+	-webkit-touch-callout: none;
+}
+
+a:hover {
+	color: #ff6699;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	/*不调整（拉伸）字大小*/
+	font-size: 100px;
+	/*表示100px=1rem;       625%    62.5%*/
+}
+
+body {
+	font-family: "microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background: white;
+	-webkit-user-select: none;
+	/*禁止选中内容*/
+}
+
+
+/*微软雅黑      华文细黑                                         最后一个字体：ios系统默认 */
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+
+/*整体居中*/
+
+#zhengti {
+	max-width: 7.5rem;
+	min-width: 3.2rem;
+	width: 100%;
+	position: relative; 
+	margin: 0 auto;
+}
+/*顶部logo*/
+#zhengti .login_logo{
+	width: 100%;
+	margin-top: 5%;
+	overflow: hidden;
+}
+#zhengti .login_logo p{
+	width: 100%;
+}
+#zhengti .login_logo p img{
+	display: block;
+	width: 1rem;
+	margin: 0 auto;
+}
+#zhengti .login_logo .logo_wz{
+	font-size: 0.15rem;
+	text-align: center;
+	color: #B4B4B4;
+}
+/*顶部logo结束*/
+
+/*登陆区域*/
+#zhengti .pad_box{
+	width: 100%;
+	margin-top: 10%;
+	padding: 0 0.15rem;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#zhengti .pad_box .comment1_text{
+	width: 100%;
+	display: block;
+}
+#zhengti .pad_box .comment1_text li{
+	width: 100%;
+	border-bottom: 1px solid #E5E5E5;
+}
+#zhengti .pad_box .comment1_text li svg{
+	font-size: 0.25rem;
+	color: #C5C5C5;
+}
+#zhengti .pad_box .comment1_text li input{
+	width: 80%;
+	height: 0.3rem;
+	color: #C5C5C5;
+	font-size: 0.16rem;
+	margin-left: 2%;
+}
+#zhengti .pad_box .comment1_text li:nth-child(2){
+	margin-top: 5%;
+}
+#zhengti .pad_box .box_dl{
+	width: 100%;
+	font-size: 0.28rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: #45AAE4;
+	text-align: center;
+	border-radius: 5px;
+	margin-top: 6%;
+	color: rgba(255,255,255,0.4);
+}
+#zhengti .pad_box .box_wb{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 5%;
+}
+#zhengti .pad_box .box_yz{
+	width: 50%;
+	font-size: 0.15rem;
+	text-align: center;
+	color: #4BACE4;
+	display: block;
+	float: left;
+}
+#zhengti .pad_box .box_cz{
+	width:50%;
+	font-size: 0.15rem;
+	text-align: center;
+	color: #4BACE4;
+	display: block;
+	float: left;
+	border-left: 0.01rem solid #CECECE;
+}
+/*登陆区域结束*/
+
+/*登陆底部区域*/
+#login_bot{
+	width: 100%;
+}
+#login_bot p:nth-child(1){
+	width: 100%;
+	font-size: 0.15rem;
+	color: #959595;
+	text-align: center;
+	margin-top: 50%;
+}
+#login_bot p span{
+	color: #73ADF0;
+}
+#login_bot p:nth-child(2){
+	width: 100%;
+	font-size: 0.15rem;
+	color: #959595;
+	text-align: center;
+	margin-top: 4%;
+	border-top: 1px solid #CECECE;
+}
+#login_bot a{
+	width: 50%;
+	font-size: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	display: block;
+	float: left;
+}
+#fanhui {
+	display: inline-block;
+	position: absolute;
+	left: 2%;
+	top: 0;
+	font-size: 0.3rem;
+	color: #45AAE3;
+}
+
+/*登陆底部区域结束*/

@@ -1,0 +1,93 @@
+header{ 
+	width:100%; 
+	/*height:0.88rem; */
+	/*background: rgba(255,81,136,0.85); */
+	position:fixed;/*固定定位*/ 
+	z-index:1000;
+	/*border-bottom:0.01rem solid #ededed; */
+	background: white;
+	text-align: center;
+	line-height: 0.88rem;
+	font-size: 0.32rem;
+	color: #434343;
+}
+.banner{
+	width: 100%;
+	height: 10rem;
+	max-width: 7.5rem;
+	min-width: 3.26rem; 
+	position: absolute;
+	left:50%; transform:translateX(-50%);
+    background: #F2F2F2;
+	overflow: hidden;
+	top:0.88rem;
+}
+.banner i{
+	width: 1.16rem;
+	height: 1.16rem;
+	display: block;
+	margin: 3rem auto 0.24rem auto;
+	text-align: center;
+	line-height: 1.16rem;
+	font-size: 1.16rem;
+}
+.banner p{
+	text-align: center;
+	font-size: 0.32rem;
+}
+.banner div{
+	width: 33%;
+	height:0.58rem;
+	text-align: center;
+	line-height: 0.58rem;
+	float: left;
+	border:0.01rem solid gray;
+	margin-top: 1.6rem;
+}
+.banner div a{
+	font-size: 0.34rem;
+	color: #333333;
+}
+.banner .deng{
+	margin-left: 14%;
+	margin-right: 5%;
+}
+
+
+
+
+
+/*底部导航栏*/
+#bottom_banner{
+	width: 100%;
+	background: white;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 50;
+}
+#bottom_banner .bottom_banner_one{
+	float: left;
+	/*margin-top: 2%;*/
+}
+#bottom_banner .bottom_banner_one i{
+	font-size: 0.38rem;
+	color: #C8C8C8;
+	display: block;
+	text-align: center;
+}
+#bottom_banner .bottom_banner_one p{
+	font-size: 0.2rem;
+	color: #717171;
+	text-align: center;
+}
+#bottom_banner .bottom_banner_one:hover p{
+	color: red;
+}
+#bottom_banner .bottom_banner_one:hover i{
+	color: red;
+}
+/*底部导航栏结束*/

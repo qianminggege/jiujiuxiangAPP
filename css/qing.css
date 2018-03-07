@@ -1,0 +1,247 @@
+header{ 
+	width:100%; 
+	/*height:0.88rem; */
+	background: white; 
+	position:fixed;/*固定定位*/ 
+	z-index:1000;
+}
+header #head_left{
+     width: 100%;
+     height: 0.88rem;
+     border-bottom: 1px solid #F1F1F1;
+}
+header #head_left a{
+	width: 20%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	line-height: 0.88rem;
+	font-size: 0.26rem;
+}
+header #head_left .left{
+	float: left;
+}
+header #head_left .left i{
+	width: 0.4rem;
+	height: 0.4rem;
+	display: block;
+	margin-left: 0.3rem;
+	font-size: 0.4rem;
+}
+header #head_left #box{
+	width: 60%;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+header #head_left #box a{
+	width: 30%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+header #head_left #box .box_1{
+	color: #CA0915;
+}
+header #head_left .right{
+	float: right;
+}
+header #head_left .right i{
+	width: 0.6rem;
+	height: 0.4rem;
+	display: block;
+	 float: right;
+	 margin-right: 0.24rem;
+	font-size: 0.6rem;
+	color: #999999;
+}
+header #xuanka{
+	width: 100%;
+	height: 0.96rem;
+	/*background: pink;*/
+	border-bottom: 2px solid #DEDEDE;
+}
+header #xuanka ul{
+	width: 100%;
+	height: 100%;
+}
+header #xuanka ul li{
+	width: 50%;
+	height: 0.96rem;
+	display: block;
+	/*background: red;*/
+	float: left;
+}
+header #xuanka ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	line-height: 0.96rem;
+	font-size: 0.32rem;
+}
+header #xuanka ul li a{
+	color: block;
+}
+header #xuanka .xuanka_1 {
+	color: #D40915;
+}
+
+#banner{
+	width: 100%;
+	/*height: 26rem;*/
+	max-width: 7.5rem;
+	min-width: 3.26rem; 
+	position: absolute;
+	left:50%; transform:translateX(-50%);
+    background: #F2F2F2;
+	overflow: hidden;
+	top:1.84rem;
+	font-family: '微软雅黑';
+}
+#banner .nei{
+	width: 100%;
+	height: 100%;
+	background:#F2F2F2; 
+	display: none;
+
+}
+#banner .nei .miao{
+	width: 100%;
+	height: 1.04rem;
+	margin-top: 0.28rem;
+	background: white;
+	position: relative;
+	/*padding-bottom: 0.2rem;*/
+}
+#banner .nei .miao p{
+	width: 100%;
+	height: 0.62rem;
+	display: block;
+	background: white;
+	position: absolute;
+	top: 0.2rem;
+	line-height: 0.62rem;
+	border-bottom: 1px solid #313131;
+}
+#banner .nei .miao p i{
+	float: left;
+	margin-left: 0.1rem;
+	color: #989898;
+}
+#banner .nei .miao p span{
+	width: 100%;
+	height: 0.62rem;
+	display: block;
+	line-height: 0.62rem;
+	font-size: 0.44rem;
+	margin-left: 0.5rem;
+	color: #C4C4C4;
+	/*font-weight: 400;*/
+}
+#banner .nei .miao p span b{
+	color: block;
+}
+#banner .nei .jiu{
+	width: 100%;
+	height: 9.84rem;
+	/*background: pink;*/
+	margin-top: 0.42rem;
+}
+#banner .nei .jiu img{
+	width: 38%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	margin-left: 0.2rem;
+}
+#banner .nei .jiu ul{
+	width: 55%;
+	height:9rem;
+	display: block;
+	float: right;
+	margin-top: 0.8rem;
+	/*background: red;*/
+	border-left: 1px solid #999999;
+}
+#banner .nei .jiu ul li{
+	width: 100%;
+	height: 0.4rem;
+	display: block;
+	float: left;
+	/*background: lightblue;*/
+	margin-bottom: 0.1rem;
+	color: #333333;
+	margin-left: 0.08rem;
+}
+#banner .nei .jiu ul li span{
+	color: block;
+	font-weight: 900;
+}
+#banner .nei .jiu ul .jiu_1{
+	width: 100%;
+	height: 1.6rem;
+	display: block;
+}
+#banner .nei .jiu ul .jiu_2{
+	width: 100%;
+	height: 0.8rem;
+	display: block;
+}
+#banner .nei .jiu ul .jiu_3{
+	width: 100%;
+	height: 0.8rem;
+	display: block;
+}
+#banner .nei .jiu ul .jiu_4{
+	width: 100%;
+	height: 0.8rem;
+	display: block;
+}
+#banner .nei .jiu ul .jiu_5{
+	width: 100%;
+	height: 0.8rem;
+	display: block;
+}
+#banner .nei .jiu ul .jiu_6{
+	width: 100%;
+	height: 1.2rem;
+	display: block;
+}
+#banner .nei .tupian{
+	width: 100%;
+	margin-top: 0.2rem;
+}
+#banner .nei .tupian img{
+	width: 100%
+}
+#banner .nei .jianyi{
+	width: 100%;
+	margin-top: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+#banner .nei .jianyi img{
+	width: 100%
+}
+#banner .nei .bo{
+	width: 100%;
+	height: 4rem;
+	background: white;
+}
+#banner .nei .bo ul{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#banner .nei .bo ul li{
+	width: 100%;
+	height: 1rem;
+	margin-bottom: 0.6rem;
+}
+#banner .nei .bo ul li span{
+	width: 100%;
+	height: 0.6rem;
+	display: block;
+	color: #CA0915;
+}

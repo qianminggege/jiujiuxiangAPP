@@ -1,0 +1,949 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-webkit-tap-highlight: transparent;
+	/*清除点击默认的高亮效果*/
+}
+
+a,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+dd,
+details,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+s,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	/*表格的边线重叠*/
+	border-spacing: 0;
+}
+
+input,
+textarea {
+	border: 0 none;
+	resize: none;
+	/*调整尺寸*/
+	/*outline:none;*/
+	/*清除表单默认的蓝色边框效果*/
+	-webkit-appearance: none;
+	/* 针对表单的默认的样式进行清除  比如立体效果*/
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	display: block;
+	-webkit-touch-callout: none;
+	/*当你触摸并按住触摸目标时候，禁止或显示系统默认菜单 */
+}
+
+a,
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #343434;
+	-webkit-touch-callout: none;
+}
+
+a:hover {
+	color: #ff6699;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+	/*不调整（拉伸）字大小*/
+	font-size: 100px;
+	/*表示100px=1rem;       625%    62.5%*/
+}
+
+body {
+	font-family: "microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background: #F1F1F1;
+	-webkit-user-select: none;
+	/*禁止选中内容*/
+}
+
+
+/*微软雅黑      华文细黑                                         最后一个字体：ios系统默认 */
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.m10 {
+	height: 0.2rem;
+	width: 100%;
+	background: #f6f6f6;
+	overflow: hidden;
+	box-shadow: 0 0 1px #e1dddd inset;
+	max-width: 7.5rem;
+	min-width: 3.2rem;
+	margin: 0 auto;
+}
+
+.m_layout {
+	max-width: 7.5rem;
+	min-width: 3.2rem;
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	margin: 0 auto;
+	-webkit-overflow-scrolling: touch;
+	/* 局部滚动(仅iOS 5以上支持*/
+}
+
+
+/* 
+  rem方式，750px 为高保真基准，原高保真大小除以基数100，即 10px/100 = 0.1rem，以此类推,字体还是 px
+ */
+
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+
+/*整体居中*/
+
+#zhengti {
+	max-width: 7.5rem;
+	min-width: 3.2rem;
+	width: 100%;
+	/*height: 85rem;*/
+	position: relative; 
+	/*left:50%;
+	transform:translateX(-50%);*/
+	margin: 0 auto;
+}
+
+
+/*整体结束*/
+
+
+/*顶部搜索区域*/
+
+#top {
+	width: 100%;
+	height: 0.8rem;
+	background: white;
+	position: fixed;
+	z-index: 1000;
+}
+
+#top .top_left {
+	width: 100%;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.1rem;
+	left: 0;
+	padding: 0 0.24rem;
+}
+
+#top .top_left form {
+	width: 100%;
+	height: 100%;
+}
+
+#top .top_left form input {
+	width: 100%;
+	height: 0.6rem;
+	border: 0 none;
+	background: #F4F4F4;
+	display: block;
+	text-align: center;
+	font-size: 0.28rem;
+	border-radius: 6px;
+	color: #B7BBB7;
+	box-shadow: 0 0 0.01rem 0.01rem #E2E2E2;
+}
+
+#top .top_left i {
+	width: 0.28rem;
+	height: 0.28rem;
+	position: absolute;
+	top: 0.12rem;
+	left: 2.74rem;
+	font-size: 0.28rem;
+	color: #B7BBB7;
+}
+
+
+/*顶部搜索区域结束*/
+
+
+/*分类左边区域*/
+.fl_left {
+	width: 1.8rem;
+	height: 22.85rem;
+	background:white;
+	/*overflow: hidden;*/
+	position:absolute;
+	top: 0.8rem;
+	float: left;
+	overflow-y: auto;
+}
+.fl_left .fl_box{
+	width: 100%;
+	
+}
+.fl_left .fl_box a{
+	width: 100%;
+	line-height:4.5em;
+	display: block;
+	font-size: 0.3rem;
+	border-bottom: 1px solid #F3F3F3;
+	text-align: center;
+	border-right: 1px solid white;
+}
+.fl_left .fl_box a:nth-child(1){
+	color: #D34850;
+	background: #F0F0F0;
+}
+/*分类左边边区域结束*/
+
+/*分类右边区域1*/
+#fl_right01{
+	width: 80%;
+	float: right;
+	/*height: 22.85rem;*/
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right01 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right01 .gg img{
+	width: 100%;
+}
+#fl_right01 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right01 .lb2{
+	width: 100%;
+	height: 4rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right01 .lb2 a{
+	display: block;
+	width: 16%;
+	float: left;
+	margin: 0.34rem .3rem 0 0.5rem;	
+}
+#fl_right01 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right01 .lb2 a img{
+	width: 100%;
+}
+#fl_right01 .lb3{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right01 .lb3 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.34rem .25rem 0 0.4rem;	
+}
+#fl_right01 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+
+#fl_right01 .lb4{
+	width: 100%;
+	height: 4rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right01 .lb4 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.34rem .25rem 0 0.4rem;	
+}
+#fl_right01 .lb4 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right01 .lb5{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right01 .lb5 a{
+	display: block;
+	width: 21%;
+	float: left;
+	margin: 0.34rem .15rem 0 0.4rem;	
+}
+#fl_right01 .lb5 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right01 .lb6{
+	width: 100%;
+	height: 2.5rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right01 .lb6 a{
+	display: block;
+	width: 23%;
+	float: left;
+	margin: 0.2rem .02rem 0 0.4rem;	
+}
+#fl_right01 .lb6 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+/*分类右边区域1结束*/
+
+/*分类右边区域2*/
+#fl_right02{
+	width: 80%;
+	float: right;
+	/*height: 22.85rem;*/
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right02 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right02 .gg img{
+	width: 100%;
+}
+#fl_right02 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right02 .lb2{
+	width: 100%;
+	height: 5.8rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right02 .lb2 a{
+	display: block;
+	width: 16%;
+	float: left;
+	margin: 0.34rem .3rem 0 0.5rem;	
+}
+#fl_right02 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right02 .lb2 a img{
+	width: 100%;
+}
+#fl_right02 .lb3{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right02 .lb3 a{
+	display: block;
+	width: 22%;
+	float: left;
+	margin: 0.34rem .2rem 0 0.3rem;	
+}
+#fl_right02 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+
+#fl_right02 .lb4{
+	width: 100%;
+	height: 4rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right02 .lb4 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.34rem .2rem 0 0.4rem;	
+}
+#fl_right02 .lb4 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right02 .lb5{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right02 .lb5 a{
+	display: block;
+	width: 21%;
+	float: left;
+	margin: 0.34rem .15rem 0 0.4rem;	
+}
+#fl_right02 .lb5 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right02 .lb6{
+	width: 100%;
+	height: 2.5rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right02 .lb6 a{
+	display: block;
+	width: 23%;
+	float: left;
+	margin: 0.3rem .02rem 0 0.4rem;	
+}
+#fl_right02 .lb6 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+/*右边区域2结束*/
+
+/*分类右边区域3*/
+#fl_right03{
+	width: 80%;
+	float: right;
+	height: 10.5rem;
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right03 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right03 .gg img{
+	width: 100%;
+}
+#fl_right03 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right03 .lb2{
+	width: 100%;
+	height: 4.3rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right03 .lb2 a{
+	display: block;
+	width: 18%;
+	float: left;
+	margin: 0.36rem .3rem 0 0.4rem;	
+}
+#fl_right03 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right03 .lb2 a img{
+	width: 100%;
+}
+#fl_right03 .lb3{
+	width: 100%;
+	height: 1rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right03 .lb3 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.2rem .25rem 0 0.4rem;	
+}
+#fl_right03 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+
+/*右边区域3结束*/
+
+/*分类右边区域4*/
+#fl_right04{
+	width: 80%;
+	float: right;
+	height: 10rem;
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right04 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right04 .gg img{
+	width: 100%;
+}
+#fl_right04 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right04 .lb2{
+	width: 100%;
+	height: 2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right04 .lb2 a{
+	display: block;
+	width: 16%;
+	float: left;
+	margin: 0.34rem .3rem 0 0.5rem;	
+}
+#fl_right04 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right04 .lb2 a img{
+	width: 100%;
+}
+#fl_right04 .lb3{
+	width: 100%;
+	height: 1rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right04 .lb3 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.25rem .25rem 0 0.4rem;	
+}
+#fl_right04 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 5%;
+	text-align: center;
+}
+
+#fl_right04 .lb4{
+	width: 100%;
+	height: 1rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right04 .lb4 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.25rem .25rem 0 0.4rem;
+}
+#fl_right04 .lb4 a p{
+	font-size: .25rem;
+	margin-top: 5%;
+	text-align: center;
+}
+/*右边区域4结束*/
+
+/*分类右边区域5*/
+#fl_right05{
+	width: 80%;
+	float: right;
+	/*height: 22.85rem;*/
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right05 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right05 .gg img{
+	width: 100%;
+}
+#fl_right05 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right05 .lb2{
+	width: 100%;
+	height: 5.8rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right05 .lb2 a{
+	display: block;
+	width: 16%;
+	float: left;
+	margin: 0.34rem .3rem 0 0.5rem;	
+}
+#fl_right05 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right05 .lb2 a img{
+	width: 100%;
+}
+#fl_right05 .lb3{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right05 .lb3 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.34rem .25rem 0 0.4rem;	
+}
+#fl_right05 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+/*右边区域5结束*/
+
+/*分类右边区域6*/
+#fl_right06{
+	width: 80%;
+	float: right;
+	height: 11rem;
+	overflow: hidden;
+	position:absolute;
+	top: 0rem;
+	left: 18%;
+	padding-left: 0.1rem;
+}
+#fl_right06 .gg{
+	width: 100%;
+	margin-top: 16%;
+	/*margin-left: 8%;*/
+	padding-left: 0.5rem;
+}
+#fl_right06 .gg img{
+	width: 100%;
+}
+#fl_right06 .lb1{
+	width: 100%;
+	font-size: 0.28rem;
+	background: #F1F1F1;
+	margin-left: 0.5rem;
+	margin-top: 5%;
+	color: #6C6C6C;
+}
+#fl_right06 .lb2{
+	width: 100%;
+	height: 2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right06 .lb2 a{
+	display: block;
+	width: 16%;
+	float: left;
+	margin: 0.34rem .3rem 0 0.5rem;	
+}
+#fl_right06 .lb2 a p{
+	font-size: 0.25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 15%;
+	text-align: center;
+}
+#fl_right06 .lb2 a img{
+	width: 100%;
+}
+#fl_right06 .lb3{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right06 .lb3 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.34rem .25rem 0 0.4rem;	
+}
+#fl_right06 .lb3 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+
+#fl_right06 .lb4{
+	width: 100%;
+	height: 1rem;
+	background: white;
+	margin-left: 0.5rem;
+	margin-top: 3%;
+	/*overflow: hidden;*/
+}
+#fl_right06 .lb4 a{
+	display: block;
+	width: 20%;
+	float: left;
+	margin: 0.2rem .25rem 0 0.4rem;	
+}
+#fl_right06 .lb4 a p{
+	font-size: .25rem;
+	margin-top: 15%;
+	text-align: center;
+}
+/*右边区域6结束*/
+/*底部导航栏*/
+#bottom_banner {
+	width: 100%;
+	background: white;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+#bottom_banner .bottom_banner_one {
+	float: left;
+	/*margin-top: 2%;*/
+}
+
+#bottom_banner .bottom_banner_one i {
+	font-size: 0.38rem;
+	color: #C8C8C8;
+	display: block;
+	text-align: center;
+}
+
+#bottom_banner .bottom_banner_one p {
+	font-size: 0.2rem;
+	color: #717171;
+	text-align: center;
+}
+
+#bottom_banner .bottom_banner_one:hover p {
+	color: red;
+}
+
+#bottom_banner .bottom_banner_one:hover i {
+	color: red;
+}
+
+
+/*底部导航栏结束*/
